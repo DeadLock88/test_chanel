@@ -10,12 +10,17 @@ const menuContent: MenuContent = {
   item3: {
     title: 'item3',
     subMenu: {
-      item1: { title: 'item1' },
-      item2: { title: 'item2' },
+      item1: { title: 'item1', link: 'https://www.facebook.com' },
+      item2: {
+        title: 'item2', subMenu: {
+          item1: { title: 'item1', link: 'https://www.facebook.com' },
+          item2: { title: 'item2', link: 'https://www.facebook.com' },
+          item3: { title: 'item3', link: 'https://www.facebook.com' },
+        }
+      },
     }
   },
 }
-
 
 export default function Home() {
   return (
